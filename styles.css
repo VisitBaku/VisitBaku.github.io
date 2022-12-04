@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(27, 27, 27)!important;
+    margin: 0px!important;
+}
+
+.info-holder{
+    margin: 10px 5%;
+    background-color: lightgray;
+    border-bottom: 3px solid gray;
+    border-top: 3px solid gray;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.info-holder h2{
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 6px;
+    margin-left: 14px;
+}
+
+#forecast{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+#forecast div{
+    display: inline-block;
+    padding: 5px 10px;
+    width: 18%;
+    margin: 0px 6px;
+    background: lightgray;
+    border: 3px solid darkgray;
+    border-radius: 19px;
+    text-align: center;
+}
+
+#forecast h4{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    color: dimgrey;
+}
+
+#forecast p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
+    margin-bottom: 17px;
+    color: gray;
+    font-size: 14px;
+}
+
+input{
+    margin: 5px;
+    text-align: center;
+}
+
+#main{
+    line-height: 24px;
+    margin-top: 8px;
+    padding-right: 10px;
+    vertical-align: top;
+    float: right;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+}
+
+.inputcoords{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#addition{ 
+    display: inline-block;
+    padding: 6px 14px;
+}
+
+#cels{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 6px;
+    color: dimgray;
+    padding-left: 6px;
+    vertical-align: top;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#weather{
+    vertical-align: top;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+
+#weather-type{
+    text-align: center;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    color: dimgray;
+}
+
+#weather-description{
+    text-align: center;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    color: gray;
+}
+
+#allotherthings{
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
