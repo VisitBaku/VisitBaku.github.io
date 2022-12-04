@@ -38,7 +38,7 @@ console.log(regionNamesInEnglish.of('US'));
 
 console.log(lat)
 function GetWeather(){
-fetch('http://api.openweathermap.org/data/2.5/forecast?lat=' + String(lat) + '&lon=' + String(long) + '&q='+String(country)+'&exclude=current.dt&appid=5b8bb692f48bc9b598d0069c5ec41b0f')
+fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + String(lat) + '&lon=' + String(long) + '&q='+String(country)+'&exclude=current.dt&appid=5b8bb692f48bc9b598d0069c5ec41b0f')
   .then(function (resp) { return resp.json() })
   .then(function (data) {
     console.log(data.city.country)
