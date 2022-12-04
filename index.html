@@ -11,7 +11,24 @@
 </head>
 
 <body>
+
+  <nav>
+    <button id="btn"  onclick="getLocation()">My Location</button>
   
+    <div class="inputcoords">    
+      <input type="text" class="inputer" id="latinput" placeholder="latitude">
+      <input type="text" class="inputer" id="longinput" placeholder="longtitude">
+      <input type="submit" class="submiter" onclick="InputPosition()"><br>
+    </div>
+    
+    <div class="inputcoords">
+      <input type="text" class="inputer" id="countryname" placeholder="city">
+      <input type="submit" class="submiter" onclick="InputCountry()">
+    </div>
+  </nav>
+  
+  <div id="assignment2">
+    <img id='backgroundinfo' src="" alt="">
     <div class="info-holder">
 
     <div>
@@ -71,21 +88,9 @@
     </div>
 
     <p id="allotherthings"></p>
+    </div>
   </div>
 
-  <button onclick="getLocation()">Get Current Location</button><br>
-  
-  <div class="inputcoords">    
-    <input type="text" id="latinput" placeholder="latitude">
-    <input type="text" id="longinput" placeholder="longtitude">
-    <input type="submit" onclick="InputPosition()"><br>
-  </div>
-  
-  <div class="inputcoords">
-    <input type="text" id="countryname" placeholder="city">
-    <input type="submit" onclick="InputCountry()">
-  </div>
-  
 </body>
 
 </html>
