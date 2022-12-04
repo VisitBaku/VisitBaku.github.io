@@ -47,6 +47,10 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + String(lat) + '&
     document.getElementById("city-name").innerHTML = (data.city.name);
     const regionNamesInEnglish = new Intl.DisplayNames(['en'], { type: 'region' });
     
+    document.getElementById("image-weather").innerHTML ='<img style="width:50px" src="http://openweathermap.org/img/wn/'+(data.list[0].weather[0].icon)+'@2x.png" alt="">';
+
+    document.getElementById("flag").innerHTML ='<img src="http://openweathermap.org/images/flags/'+data.city.country.toLowerCase()+'.png" alt="">';
+
     document.getElementById("country").innerHTML = (regionNamesInEnglish.of(data.city.country));
     
     document.getElementById("weather").innerHTML =Math.round(data.list[0].main.temp - 273);
