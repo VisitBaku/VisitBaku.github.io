@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="sample.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+  
+    <div class="info-holder">
+
+    <div>
+      <div id="addition">
+        <p id="weather-type"></p>
+        <p id="weather-description"></p>
+      </div>
+
+      <span id="weather"></span>
+    
+      <div id="cels">
+        <span>°C</span>
+      </div>
+    
+      <div id="main">
+        <span id="city-name"></span>
+        <span>,</span>
+        <span id="country"></span>
+        <p id="weather"></p>
+      </div>
+    </div>
+
+    <h2>Forecast</h2>
+
+    <div id="forecast">
+      <div id="1">
+
+        <p id="dateandtime1">Date and time</p>
+        <h4>Wind Speed:</h3>
+        <p id="windspeed1">wind speed</p>
+        <h4>Wind direction:</h3>
+        <p><span id="winddir1">Wind direction</span> <span id="windname1"></span></p>
+      </div>
+      <div id="2">
+        <p id="dateandtime2">Date and time</p>
+        <h4>Wind Speed:</h3>
+        <p id="windspeed2">wind speed</p>
+        <h4>Wind direction:</h3>
+        <p><span id="winddir2">Wind direction</span> <span id="windname2"></span></p>
+      </div>
+      <div id="3">
+        <p id="dateandtime3">Date and time</p>
+        <h4>Wind Speed:</h3>
+        <p id="windspeed3">wind speed</p>
+        <h4>Wind direction:</h3>
+        <p><span id="winddir3">Wind direction</span> <span id="windname3"></span></p>
+      </div>
+      <div id="4">
+        <p id="dateandtime4">Date and time</p>
+        <h4>Wind Speed:</h3>
+        <p id="windspeed4">wind speed</p>
+        <h4>Wind direction:</h3>
+        <p><span id="winddir4">Wind direction</span> <span id="windname4"></span></p>
+      </div>
+    </div>
+
+    <p id="allotherthings"></p>
+  </div>
+
+  <button onclick="getLocation()">Get Current Location</button><br>
+  
+  <div class="inputcoords">    
+    <input type="text" id="latinput" placeholder="latitude">
+    <input type="text" id="longinput" placeholder="longtitude">
+    <input type="submit" onclick="InputPosition()"><br>
+  </div>
+  
+  <div class="inputcoords">
+    <input type="text" id="countryname" placeholder="city">
+    <input type="submit" onclick="InputCountry()">
+  </div>
+  
+</body>
+
+</html>
