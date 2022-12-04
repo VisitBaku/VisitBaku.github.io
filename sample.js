@@ -51,6 +51,8 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + String(lat) + '&
 
     document.getElementById("flag").innerHTML ='<img src="http://openweathermap.org/images/flags/'+data.city.country.toLowerCase()+'.png" alt="">';
 
+    document.getElementById("backgroundinfo").src = 'https://source.unsplash.com/1600x900/?'+String(data.city.name);
+
     document.getElementById("country").innerHTML = (regionNamesInEnglish.of(data.city.country));
     
     document.getElementById("weather").innerHTML =Math.round(data.list[0].main.temp - 273);
@@ -87,7 +89,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + String(lat) + '&
     if(data.list[1].wind.deg<45){
       document.getElementById("windname2").innerHTML ='East';
     }
-    else if(data.list[0].wind.deg>=315 ){
+    else if(data.list[1].wind.deg>=315 ){
       document.getElementById("windname2").innerHTML ='East';
     }
     else if(data.list[1].wind.deg<135 && data.list[0].wind.deg>=45 ){
@@ -106,7 +108,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + String(lat) + '&
     if(data.list[2].wind.deg<45){
       document.getElementById("windname3").innerHTML ='East';
     }
-    else if(data.list[0].wind.deg>=315){
+    else if(data.list[2].wind.deg>=315){
       document.getElementById("windname3").innerHTML ='East';
     }
     else if(data.list[2].wind.deg<135 && data.list[0].wind.deg>45 ){
@@ -122,7 +124,7 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + String(lat) + '&
     document.getElementById("dateandtime4").innerHTML =data.list[3].dt_txt;
     document.getElementById("windspeed4").innerHTML =data.list[3].wind.speed+' m/s';
     document.getElementById("winddir4").innerHTML =data.list[3].wind.deg+'°';
-    if(data.list[0].wind.deg>=315 ){
+    if(data.list[3].wind.deg>=315 ){
       document.getElementById("windname4").innerHTML ='East';
     }
     else if(data.list[3].wind.deg<45){
